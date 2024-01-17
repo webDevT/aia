@@ -1,0 +1,201 @@
+@import "vars"
+@import "fonts"
+
+//start global style 
+body 
+    font-family: "Open Sans", sans-serif
+    font-size: 20px 
+    color: #333333
+.container-fluid
+    padding-left: 0 
+    padding-right: 0 
+    width: 1000px 
+    max-width: 82.039vw  
+ul 
+    list-style: none
+    padding-left: 0
+li 
+    position: relative
+    margin-bottom: 15px
+li::before
+    content: ''
+    display: inline-block
+    width: 10px
+    height: 10px
+    background-color: black
+    border-radius: 50%
+    margin-right: 0.5em
+.h2 
+    color: #fff 
+    font-weight: 800
+    font-size: 36px
+//end global style
+
+//start main screen 
+.main-screen 
+    padding-bottom: 11vw
+    background: #fff
+    background: url('../img/top-image-auto-jobs-AIA.png')
+    background-repeat: no-repeat
+    background-position: bottom left
+    background-size: 27vw
+    position: relative
+    padding-top: 88px
+    line-height: 1.33
+    .container-fluid 
+        display: flex
+.main-screen__content
+    padding-left: 58px
+.main-screen__content
+    p 
+        margin-bottom: 50px
+    a 
+        color: $green
+        text-decoration: none
+        font-weight: 800
+.main-screen__list-title
+    font-weight: 800
+    margin-bottom: 12px
+//end main screen
+
+//start form section style 
+.form-section
+    padding-top: 140px 
+    padding-bottom: 140px
+    background: $blue
+    clip-path: polygon(0 6.2vw, 100% 0, 100% 100%, 0% 100%)
+    position: relative
+    z-index: 1
+    min-height: 735px  
+    margin-top: -7vw 
+    color: #fff
+    .h2 
+        text-align: center
+        margin-bottom: 32px
+.form__row
+    display: flex 
+    justify-content: space-between
+    .form__col
+        width: 48%
+.input,
+.select
+    width: 100%
+    border: 2px solid #999999
+    color: #999999
+    border-radius: 8px
+    padding-left: 16px 
+    padding-right: 16px
+    height: 50px
+    font-weight: 600
+    outline: none
+select
+    appearance: none
+.select 
+    background-image: url('../img/arrow.svg')
+    background-repeat: no-repeat
+    background-position: right 15px center
+select::-ms-expand
+    display: none
+.input::placeholder
+    color: #999999
+.input__item--two
+    display: flex 
+    justify-content: space-between
+    .input 
+        width: 48%
+.input__item
+    margin-bottom: 15px
+//end form section style
+
+//start green section style 
+.green-section 
+    min-height: 475px
+    clip-path: polygon(0 6.2vw, 100% 0, 100% 100%, 0% 100%)
+    background: $green
+    margin-top: -7vw
+    position: relative
+    z-index: 99
+    padding-top: 140px
+    padding-bottom: 160px
+    .h2 
+        text-align: right
+.green-section__image
+    max-width: 100%   
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+//end green section style
+
+//start items section
+.items-section
+    background: #fff 
+    position: relative
+    z-index: 100
+    clip-path: polygon(0 6.2vw, 100% 0, 100% 100%, 0% 100%)
+    margin-top: -7vw
+    color: #000
+    padding-top: 160px 
+    padding-bottom: 40px
+.footer-image
+    width: 100%
+    margin-bottom: 75px
+    clip-path: polygon(0 6.2vw, 100% 0, 100% 100%, 0% 100%)
+.checkbox
+    width: 23px 
+    min-width: 23px
+    height: 23px
+    border: 2px solid #999999
+    cursor: pointer
+.input__item
+    display: flex 
+    align-items: center
+.checkbox__label
+    padding-left: 20px
+    font-size: 16px 
+    font-weight: 600
+.select--disable
+    background-color: #B9B8B8
+.submit-button
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    margin-top: 46px
+    border: 2px solid #fff 
+    height: 60px
+    padding-left: 48px 
+    padding-right: 48px 
+    background: #9FC12B
+    color: #fff 
+    font-weight: 800 
+    font-size: 26px
+    border-radius: 16px
+.item 
+    text-align: center
+    p 
+        width: 270px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+        margin-bottom: 0
+.item__title
+    color: #336699 
+    font-size: 22px 
+    font-weight: 800
+    margin-bottom: 15px
+    
+.item__value
+    font-size: 72px
+    font-weight: 800
+    line-height: 1
+    color: #9FC12B
+.item__sub-title
+    font-weight: 800
+    color: #7E7E7E
+    margin-bottom: 22px
+
+//end items section
+
+@import "media"
+
+
+
